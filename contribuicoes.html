@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribuições - Curiosidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contribuições - Curiosidades</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="contribuicoes.html">Contribuições</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contribuir">
+            <h2>Compartilhe Algo</h2>
+            <form id="contribuirForm">
+                <label for="tipo">Tipo de Conteúdo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="youtube">Link do YouTube</option>
+                    <option value="texto">Texto</option>
+                    <option value="foto">Foto</option>
+                    <option value="livro">Livro</option>
+                </select>
+
+                <label for="conteudo">Conteúdo:</label>
+                <input type="text" id="conteudo" name="conteudo" placeholder="Insira o link ou o texto" required>
+
+                <button type="submit">Compartilhar</button>
+            </form>
+        </section>
+
+        <section class="contribuicoes">
+            <h2>Contribuições Recentes</h2>
+            <div id="listaContribuicoes">
+                <!-- Contribuições compartilhadas aparecerão aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Curiosidades - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
