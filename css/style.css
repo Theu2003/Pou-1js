@@ -57,17 +57,43 @@ button:hover {
     background-color: #45a049;
 }
 
-#video-gallery {
+#video-gallery, #live-streams {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
 
-#video-gallery video {
+#video-gallery video, #live-streams video {
     width: 100%;
     max-width: 300px;
     border-radius: 5px;
+}
+
+#comment-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#comment-section .comment {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
 }
 
 footer {
