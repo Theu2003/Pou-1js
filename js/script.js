@@ -8,8 +8,6 @@ document.getElementById('start-live-btn').addEventListener('click', function() {
             liveVideo.srcObject = stream;
             liveVideo.play();
 
-            // Aqui você enviaria o stream para o servidor
-            // Exemplo: enviar o stream para um servidor WebRTC ou RTMP
         })
         .catch(function(error) {
             alert("Erro ao acessar a câmera ou microfone: " + error.message);
@@ -34,8 +32,6 @@ document.getElementById('upload-video-btn').addEventListener('click', function()
 
         videoGallery.appendChild(videoElement);
 
-        // Aqui você faria o upload do vídeo para o servidor
-        // Exemplo: Enviar o vídeo via AJAX para uma API backend
     } else {
         alert("Por favor, selecione um vídeo para postar.");
     }
@@ -54,8 +50,6 @@ document.getElementById('post-comment-btn').addEventListener('click', function()
 
         commentInput.value = "";
 
-        // Aqui você enviaria o comentário para o servidor
-        // Exemplo: Salvar o comentário em um banco de dados via API
     } else {
         alert("Por favor, escreva um comentário.");
     }
